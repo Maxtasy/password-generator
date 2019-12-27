@@ -5,18 +5,76 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #1B1640;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    background-color: darkslateblue;
     justify-content: center;
+    align-items: center;
 }
 
 .container {
-    width: 50%;
-    margin: 0 auto;
+    background-color: #483d8b;
+    border: 2px solid black;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+}
+
+.character-amount-container {
+    display: flex;
+}
+
+.passwordDisplay {
+    font-family: 'Courier Prime', monospace;
+    margin: 2rem;
+    padding: 1rem;
+    color: #333;
+    background-color: white;
+    border-radius: .5rem;
+    height: 5rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+}
+
+.number-input {
+    width: 2rem;
+}
+
+.btn {
+    grid-column: span 2;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.btn:hover {
+    background-color: #FFFFFF33;
 }
